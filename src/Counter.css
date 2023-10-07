@@ -1,0 +1,24 @@
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btns {
+  margin-top: 5px;
+}
+
+.btns button {
+  margin: 5px;
+  width: 120px;
+  height: 60px;
+  text-align: center;
+  padding: 0;
+}
+
+.counter-container p {
+  text-align: center;
+  width: 60px;
+  margin-bottom: 10px;
+}

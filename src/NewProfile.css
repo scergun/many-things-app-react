@@ -1,0 +1,64 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newProfileForm {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.sign {
+  margin-top: 20px;
+}
+
+.newProfileForm input:first-child {
+  margin-top: 0 !important;
+}
+
+.newProfileForm .btn-submit {
+  cursor: pointer !important;
+  color: var(--text-color);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+.newProfileForm input {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 1.1em 1.1em;
+  font-size: 1.3em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  cursor: text;
+  transition: border-color 0.25s;
+  margin-top: 10px;
+  transition: border-color 0.25s;
+}
+
+.newProfileForm input:hover {
+  border-color: var(--primary-color);
+}
+
+.errors-list {
+  position: absolute;
+  font-size: 13px;
+  width: 200px;
+  text-wrap: wrap;
+  right: 575px;
+}
+
+.errors-list .errors {
+  height: 39px;
+  text-align: center;
+  text-indent: 10px;
+  margin-bottom: 16px;
+  border: none;
+  line-height: 17px;
+}

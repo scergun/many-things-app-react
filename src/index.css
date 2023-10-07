@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: var(--primary-color);
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--primary-color);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 1.1em 3em;
+  font-size: 1.3em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--secondary-color);
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin-top: 0px;
+  color: var(--text-color);
+}
+button:hover {
+  border-color: var(--primary-color);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+p {
+  border: 3px solid transparent;
+  border-color: var(--secondary-color);
+  border-radius: 8px;
+  font-size: 1.3em;
+  padding: 15px 25px;
+}
+
+.navbar li {
+  cursor: pointer;
+  transition: color 0.15s;
+}
+
+.navbar a:hover {
+  color: #747bff;
+}
+
+.navbar a:active {
+  color: #747bff;
+}
+
+.navbar a {
+  color: var(--text-color);
+  padding: 5px;
+  user-select: none;
+  transition: color 0.15s;
+}
+
+.navbar .active {
+  color: #747bff;
+}
+
+.navbar a:last-child {
+  margin-left: auto;
+}
+
+.navbar {
+  background-color: transparent;
+}
+
+.navbar-container {
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  font-size: 24px;
+  width: 100vw;
+  color: var(--text-color);
+  position: relative;
+  box-shadow: inset rgb(65, 65, 65) 0px -2px 15px 0px;
+}
+
+.navbar .emoji {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  transition: color 0.15s;
+  margin-left: 20px;
+}
+
+.navbar .emoji:hover {
+  border: none;
+  outline: none;
+  color: var(--primary-color);
+}
+
+.navbar .emoji:active {
+  outline: none;
+  border: none;
+}
+
+.navbar .emoji:focus {
+  outline: none;
+  border: none;
+}
+
+.navbar button {
+  margin-left: auto;
+}
+
+.last-item {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-left: auto;
+}

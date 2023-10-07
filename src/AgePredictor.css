@@ -1,0 +1,75 @@
+.agePredictor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.agePredictor input {
+  position: absolute;
+  border-radius: 8px 0 0 8px;
+  border: 1px solid transparent;
+  padding: 1.1em 1.1em;
+  font-size: 1.3em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--secondary-color);
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin-top: 0px;
+  right: -103px;
+}
+
+.results {
+  border: 3px solid transparent;
+  border-color: var(--secondary-color);
+  border-radius: 8px;
+  font-size: 1.3em;
+  padding: 15px 25px;
+  margin-top: 60px;
+  width: 335px;
+  min-width: 240px;
+  max-width: 600px;
+}
+
+.results p {
+  border: none;
+  border-bottom: 3px solid var(--secondary-color);
+  border-radius: 2px;
+}
+
+.agePredictor input:hover {
+  border-color: var(--primary-color);
+}
+
+.agePredictor input:focus {
+  border-color: var(--primary-color);
+}
+
+.predict {
+  position: absolute;
+  width: 90px;
+  height: 75px;
+  padding: 0px;
+  right: -193px;
+  border: 1px solid var(--secondary-color);
+  border-left: 1px solid var(--neutral-color);
+  border-radius: 0 8px 8px 0;
+  transition: border-color 0.25s;
+}
+
+.predict:hover {
+  border-color: var(--primary-color);
+}
+
+.age-pred {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 40px;
+}
