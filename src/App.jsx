@@ -18,7 +18,7 @@ export const AppContext = createContext();
 export const ThemeContext = createContext();
 function App() {
   const [currentLink, setCurrentLink] = useState(0);
-  const [username, setUsername] = useState("Misafir Üye");
+  const [username, setUsername] = useState("Guest");
   const [theme, setTheme] = useState("dark");
   return (
     <div className={`rootDiv ${theme}`}>
