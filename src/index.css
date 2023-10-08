@@ -171,6 +171,8 @@ p {
   }
   .navbar-container {
     padding: 0;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
   }
   .navbar {
     display: none;
@@ -185,7 +187,7 @@ p {
   .navbar-responsive button {
     text-align: center;
     padding: 0;
-    color: white;
+    color: var(--text-color);
     border-radius: 0;
     background-color: transparent;
     border-bottom: 2px solid var(--neutral-color);
@@ -198,7 +200,7 @@ p {
   }
 
   .navbar-responsive a {
-    color: white;
+    color: var(--text-color);
     text-align: center;
     border-bottom: 2px solid var(--neutral-color);
     width: 100vw;
@@ -208,7 +210,7 @@ p {
   .navbar-responsive .emoji {
     text-align: center;
     padding: 0;
-    color: white;
+    color: var(--text-color);
     width: 100%;
   }
   .navbar-responsive-hidden {
@@ -219,7 +221,7 @@ p {
   .navbar-responsive-hidden button {
     text-align: center;
     padding: 0;
-    color: white;
+    color: var(--text-color);
     background-color: transparent;
     border-radius: 0;
   }
