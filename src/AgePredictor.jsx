@@ -24,7 +24,7 @@ export const AgePredictor = () => {
       <div className="age-pred">
         <input
           onChange={(event) => setName(event.target.value)}
-          placeholder="Kemal... etc"
+          placeholder="John... etc"
         />
         <button onClick={predictAge} className="predict">
           Predict Age

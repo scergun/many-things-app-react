@@ -32,3 +32,14 @@
 .catFact button:hover {
   border-color: var(--primary-color);
 }
+
+@media screen and (max-width: 600px) {
+  .catFact h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .catFact p {
+    font-size: 1.25em;
+    padding: 10px 25px;
+  }
+}

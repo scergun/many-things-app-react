@@ -109,9 +109,11 @@ h1 {
     cursor: pointer;
     transition: border-color 0.25s;
     margin-top: 0px;
-    width: 50vw;
-    height: 15px;
+    width: 75vw;
+    height: 8vh;
     color: var(--text-color);
+    padding: 0;
+    text-align: center;
   }
 
   .age-pred .predict {
@@ -119,20 +121,25 @@ h1 {
     border: 1px solid var(--secondary-color);
     border-radius: 8px;
     transition: border-color 0.25s;
-    height: 50px;
-    font-size: 15px;
-    margin-top: 10px;
+
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0;
+    width: 50vw;
   }
 
   .results {
     border: 3px solid transparent;
     border-color: var(--secondary-color);
     border-radius: 8px;
-    font-size: 1.3em;
+    font-size: 1em;
     margin-top: 10px;
     width: 50vw !important;
     min-width: 50vw;
     max-width: none !important;
+    text-wrap: wrap;
+    word-wrap: break-word;
+    padding: 0;
   }
 
   .results p {

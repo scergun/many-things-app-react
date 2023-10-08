@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AppContext, ThemeContext } from "./App.jsx";
 
-import { MoonFill, SunFill } from "react-bootstrap-icons";
+import { MoonFill, SunFill, Filter } from "react-bootstrap-icons";
 
 export const Navbar = () => {
   const { username, currentLink, setCurrentLink } = useContext(AppContext);
@@ -72,7 +72,9 @@ export const Navbar = () => {
             : "navbar-responsive-hidden dropdown-true"
         }
       >
-        <button onClick={() => setIsDropdown(true)}>x</button>
+        <button onClick={() => setIsDropdown(true)}>
+          <Filter />
+        </button>
       </div>
       <div
         className={
@@ -81,7 +83,9 @@ export const Navbar = () => {
             : "navbar-responsive dropdown-false"
         }
       >
-        <button onClick={() => setIsDropdown(false)}>x</button>
+        <button onClick={() => setIsDropdown(false)}>
+          <Filter />
+        </button>
 
         <Link
           onClick={() => setCurrentLink(0)}
