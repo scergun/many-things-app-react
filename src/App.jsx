@@ -5,7 +5,7 @@ import { ExcuseFinder } from "./ExcuseFinder";
 import { Counter } from "./Counter";
 import { Navbar } from "./Navbar";
 import { NewProfile } from "./NewProfile";
-import { BrowserRouter as Router, Routes, Route, HashRouter } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import { createContext, useState } from "react";
 import { QueryClient, QueryClientProvider } from "react-query";
 
