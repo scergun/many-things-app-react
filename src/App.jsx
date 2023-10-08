@@ -5,7 +5,7 @@ import { ExcuseFinder } from "./ExcuseFinder";
 import { Counter } from "./Counter";
 import { Navbar } from "./Navbar";
 import { NewProfile } from "./NewProfile";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, HashRouter } from "react-router-dom";
 import { createContext, useState } from "react";
 import { QueryClient, QueryClientProvider } from "react-query";
 
@@ -28,7 +28,7 @@ function App() {
             <AppContext.Provider
               value={{ username, setUsername, currentLink, setCurrentLink }}
             >
-              <Router>
+              <HashRouter>
                 <Navbar />
                 <Routes>
                   <Route path="/CatFact" element={<CatFact />} />
@@ -37,7 +37,7 @@ function App() {
                   <Route path="/Counter" element={<Counter />} />
                   <Route path="/NewProfile" element={<NewProfile />} />
                 </Routes>
-              </Router>
+              </HashRouter>
             </AppContext.Provider>
           </ThemeContext.Provider>
         </QueryClientProvider>
