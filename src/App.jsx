@@ -31,6 +31,7 @@ function App() {
               <HashRouter>
                 <Navbar />
                 <Routes>
+                  <Route path="/" element={<CatFact />} />
                   <Route path="/CatFact" element={<CatFact />} />
                   <Route path="/AgePredictor" element={<AgePredictor />} />
                   <Route path="/ExcuseFinder" element={<ExcuseFinder />} />
