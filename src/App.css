@@ -6,7 +6,8 @@
   --secondary-color: #1a1a1a;
   --neutral-color: #242424;
   --text-color: white;
-  width: 99.5vw;
+  --shadow-color: rgb(65, 65, 65) 
+  width: 100vw;
 }
 
 .rootDiv {
@@ -15,8 +16,11 @@
   align-items: flex-start;
   background-color: var(--neutral-color);
   color: var(--text-color);
-  width: 100.5vw;
+  width: 100vw;
   height: 100vh;
+  min-height: 100vh;
+  max-height: max-content
+
 }
 
 .container {
@@ -28,29 +32,18 @@
   background-color: var(--neutral-color);
 }
 
-.navbar {
-  background-color: var(--secondary-color);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: start;
-  padding: 5px;
-  font-size: 24px;
-  width: 80vw;
-  color: var(--text-color);
-  position: relative;
-}
-
 .dark {
   --primary-color: #646cff;
   --secondary-color: #1a1a1a;
   --neutral-color: #242424;
   --text-color: white;
+  --shadow-color: rgb(46, 46, 46) 
 }
 
 .light {
   --primary-color: #646cff;
-  --secondary-color: #e7e7e7;
+  --secondary-color: #e0e0e0;
   --neutral-color: #ffffff;
   --text-color: black;
+  --shadow-color: rgb(233, 233, 233) ;
 }

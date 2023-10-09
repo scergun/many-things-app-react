@@ -1,13 +1,23 @@
 import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AppContext, ThemeContext } from "./App.jsx";
-
+import "./Navbar.css";
 import { MoonFill, SunFill, Filter } from "react-bootstrap-icons";
 
 export const Navbar = () => {
   const { username, currentLink, setCurrentLink } = useContext(AppContext);
   const { theme, setTheme } = useContext(ThemeContext);
-  const [isDropdown, setIsDropdown] = useState(false);
+  const [dropdown, setDropdown] = useState("start");
+
+  const dropDownFunc = () => {
+    if (dropdown === "start") {
+      setDropdown("dropdown");
+    } else if (dropdown === "dropdown") {
+      setDropdown("dropdown no-dropdown");
+    } else if (dropdown === "dropdown no-dropdown") {
+      setDropdown("dropdown");
+    }
+  };
 
   return (
     <div className={`navbar-container ${theme}`}>
@@ -65,6 +75,87 @@ export const Navbar = () => {
         </div>
       </div>
 
+      <div className="navbar-resp1">
+        <button onClick={dropDownFunc} className="emoji1">
+          <Filter />
+        </button>
+        <ul className={`navbar-nav ${dropdown}`}>
+          <Link
+            onClick={() => {
+              setCurrentLink(0);
+              setDropdown("dropdown no-dropdown");
+            }}
+            className={currentLink === 0 ? `active ${theme}` : `${theme}`}
+            to={"/CatFact"}
+          >
+            CatFact
+          </Link>
+          <Link
+            onClick={() => {
+              setCurrentLink(1);
+              setDropdown("dropdown no-dropdown");
+            }}
+            className={currentLink === 1 ? `active ${theme}` : `${theme}`}
+            to={"/AgePredictor"}
+          >
+            AgePredictor
+          </Link>
+          <Link
+            onClick={() => {
+              setCurrentLink(2);
+              setDropdown("dropdown no-dropdown");
+            }}
+            className={currentLink === 2 ? `active ${theme}` : `${theme}`}
+            to={"/ExcuseFinder"}
+          >
+            ExcuseFinder
+          </Link>
+          <Link
+            onClick={() => {
+              setCurrentLink(3);
+              setDropdown("dropdown no-dropdown");
+            }}
+            className={currentLink === 3 ? `active ${theme}` : `${theme}`}
+            to={"/Counter"}
+          >
+            CounterApp
+          </Link>
+
+          <Link
+            onClick={() => {
+              setCurrentLink(4);
+              setDropdown("dropdown no-dropdown");
+            }}
+            className={currentLink === 4 ? `active ${theme}` : `${theme}`}
+            to={"/NewProfile"}
+          >
+            {username}
+          </Link>
+
+          <button className="emoji">
+            {theme === "dark" && (
+              <MoonFill
+                size={17}
+                onClick={() => {
+                  setDropdown("dropdown no-dropdown");
+                  setTheme(theme === "dark" ? "light" : "dark");
+                }}
+              />
+            )}
+            {theme === "light" && (
+              <SunFill
+                size={25}
+                onClick={() => {
+                  setDropdown("dropdown no-dropdown");
+                  setTheme(theme === "dark" ? "light" : "dark");
+                }}
+              />
+            )}
+          </button>
+        </ul>
+      </div>
+
+      {/* 
       <div
         className={
           isDropdown === true
@@ -138,7 +229,7 @@ export const Navbar = () => {
             />
           )}
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };

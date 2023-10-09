@@ -1,0 +1,212 @@
+.navbar li {
+  cursor: pointer;
+  transition: color 0.15s;
+}
+
+.navbar a:hover {
+  color: var(--primary-color);
+}
+
+.navbar a:active {
+  color: var(--primary-color);
+}
+
+.navbar a {
+  color: var(--text-color);
+  padding: 5px;
+  user-select: none;
+  transition: color 0.15s;
+}
+
+.navbar .active {
+  color: var(--primary-color);
+}
+
+.navbar a:last-child {
+  margin-left: auto;
+}
+.navbar {
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  padding: 5px;
+  font-size: 24px;
+  width: 80vw;
+  color: var(--text-color);
+  position: relative;
+  background-color: transparent;
+}
+
+.navbar-container {
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  width: 100vw;
+  color: var(--text-color);
+  position: relative;
+  box-shadow: inset var(--shadow-color) 0px -2px 15px 0px;
+}
+
+.navbar .emoji {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  transition: color 0.15s;
+  margin-left: 20px;
+}
+
+.navbar .emoji:hover {
+  border: none;
+  outline: none;
+  color: var(--primary-color);
+}
+
+.navbar .emoji:active {
+  outline: none;
+  border: none;
+}
+
+.navbar .emoji:focus {
+  outline: none;
+  border: none;
+}
+
+.navbar button {
+  margin-left: auto;
+}
+
+.last-item {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-left: auto;
+}
+
+.navbar-responsive {
+  display: none;
+}
+
+.navbar-responsive-hidden {
+  display: none;
+}
+.navbar-resp1 {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-container {
+    padding: 0;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+  }
+  .navbar {
+    display: none;
+  }
+
+  .navbar-resp1 {
+    display: flex;
+    width: 100vw;
+    height: 1rem;
+    position: fixed;
+    background-color: var(--neutral-color);
+    z-index: 10;
+  }
+
+  .navbar-nav {
+    list-style: none;
+    display: none;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--neutral-color);
+    position: fixed;
+  }
+  .navbar-nav.dropdown {
+    display: flex;
+    animation: slidein 500ms ease-in-out forwards;
+    width: 100%;
+  }
+  .navbar-nav.no-dropdown {
+    display: flex;
+    animation: slideout 500ms ease-in-out forwards;
+    width: 100%;
+  }
+
+  .navbar-nav a {
+    width: 100%;
+    background-color: var(--secondary-color);
+    border-bottom: 2px solid var(--neutral-color);
+    align-items: center;
+    text-align: center;
+    color: var(--text-color);
+  }
+  .navbar-nav button {
+    width: 100%;
+    background-color: var(--secondary-color);
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    align-items: center;
+    text-align: center;
+    border-bottom: 2px solid var(--neutral-color);
+    border-radius: 0;
+    font-size: 24px;
+    font-weight: 500;
+    height: 38px;
+  }
+  .navbar-resp1 .emoji1 {
+    width: 100%;
+    background-color: var(--secondary-color);
+    padding: 0;
+    margin: 0;
+    margin-top: 8px;
+    outline: 0;
+    align-items: center;
+    text-align: center;
+    border-bottom: 2px solid var(--neutral-color);
+    border-radius: 0;
+    font-size: 24px;
+    font-weight: 500;
+    height: 38px;
+    z-index: 3;
+    position: fixed;
+  }
+
+  .navbar-resp1 .emoji1:hover {
+    border-bottom: 2px solid var(--neutral-color);
+    border-color: var(--neutral-color);
+  }
+}
+
+@keyframes slidein {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(20%);
+    opacity: 1;
+  }
+}
+
+@keyframes slideout {
+  from {
+    transform: translateY(20%);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}

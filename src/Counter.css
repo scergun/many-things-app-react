@@ -29,4 +29,7 @@
     display: flex;
     justify-content: center;
   }
+  .counter-container {
+    margin-top: 2rem;
+  }
 }

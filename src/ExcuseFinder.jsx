@@ -26,85 +26,83 @@ export const ExcuseFinder = () => {
   };
 
   return (
-    <div>
-      <div className="exc-container">
-        <h1>EXCUSE FINDER</h1>
-        <ul>
-          <li
-            onClick={() => {
-              setRandomId(Math.floor(Math.random() * 10) + 1);
-              excuser();
-            }}
-          >
-            Family
-          </li>
-          <li
-            onClick={() => {
-              setRandomId(Math.floor(Math.random() * 10) + 401);
-              excuser();
-            }}
-          >
-            Party
-          </li>
-          <li
-            onClick={() => {
-              setRandomId(Math.floor(Math.random() * 10) + 101);
-              excuser();
-            }}
-          >
-            Office
-          </li>
-          <li
-            onClick={() => {
-              setRandomId(Math.floor(Math.random() * 10) + 201);
-              excuser();
-            }}
-          >
-            Children
-          </li>
-          <li
-            onClick={() => {
-              setRandomId(Math.floor(Math.random() * 10) + 301);
-              excuser();
-            }}
-          >
-            College
-          </li>
-          <li
-            onClick={() => {
-              setRandomId(Math.floor(Math.random() * 16) + 501);
-              excuser();
-            }}
-          >
-            Funny
-          </li>
-          <li
-            onClick={() => {
-              setRandomId(Math.floor(Math.random() * 13) + 601);
-              excuser();
-            }}
-          >
-            Unbelievable
-          </li>
-          <li
-            onClick={() => {
-              setRandomId(Math.floor(Math.random() * 15) + 701);
-              excuser();
-            }}
-          >
-            Developers
-          </li>
-          <li
-            onClick={() => {
-              setRandomId(Math.floor(Math.random() * 20) + 801);
-              excuser();
-            }}
-          >
-            Gaming
-          </li>
-        </ul>
-        <p>{theExcuse}</p>
-      </div>
+    <div className="exc-container">
+      <h1>EXCUSE FINDER</h1>
+      <ul>
+        <li
+          onClick={() => {
+            setRandomId(Math.floor(Math.random() * 10) + 1);
+            excuser();
+          }}
+        >
+          Family
+        </li>
+        <li
+          onClick={() => {
+            setRandomId(Math.floor(Math.random() * 10) + 401);
+            excuser();
+          }}
+        >
+          Party
+        </li>
+        <li
+          onClick={() => {
+            setRandomId(Math.floor(Math.random() * 10) + 101);
+            excuser();
+          }}
+        >
+          Office
+        </li>
+        <li
+          onClick={() => {
+            setRandomId(Math.floor(Math.random() * 10) + 201);
+            excuser();
+          }}
+        >
+          Children
+        </li>
+        <li
+          onClick={() => {
+            setRandomId(Math.floor(Math.random() * 10) + 301);
+            excuser();
+          }}
+        >
+          College
+        </li>
+        <li
+          onClick={() => {
+            setRandomId(Math.floor(Math.random() * 16) + 501);
+            excuser();
+          }}
+        >
+          Funny
+        </li>
+        <li
+          onClick={() => {
+            setRandomId(Math.floor(Math.random() * 13) + 601);
+            excuser();
+          }}
+        >
+          Unbelievable
+        </li>
+        <li
+          onClick={() => {
+            setRandomId(Math.floor(Math.random() * 15) + 701);
+            excuser();
+          }}
+        >
+          Developers
+        </li>
+        <li
+          onClick={() => {
+            setRandomId(Math.floor(Math.random() * 20) + 801);
+            excuser();
+          }}
+        >
+          Gaming
+        </li>
+      </ul>
+      <p>{theExcuse}</p>
     </div>
   );
 };

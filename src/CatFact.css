@@ -42,4 +42,11 @@
     font-size: 1.25em;
     padding: 10px 25px;
   }
+  .catFact {
+    margin-top: 2rem;
+  }
+
+  .catFact button {
+    padding: 1.1rem 1.1rem;
+  }
 }
