@@ -45,8 +45,8 @@ The project is designed to be completely mobile-responsive, ensuring a seamless 
 
 To run the project locally, follow these steps:
 
-1. Clone the project: `git clone https://github.com/YourUsername/ManyThingsReactApp.git`
-2. Navigate to the project directory: `cd ManyThingsReactApp`
+1. Clone the project: `git clone https://github.com/scergun/many-things-react-app.git`
+2. Navigate to the project directory: `cd many-things-react-app`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm run dev`
 
@@ -56,5 +56,5 @@ Contributions to this project are welcome. Feel free to submit pull requests or 
 
 ## Contact
 
-If you have any questions or feedback related to the project, please contact [Your Email Address].
+If you have any questions or feedback related to the project, please contact [sametcaglarergun@gmail.com].
 
